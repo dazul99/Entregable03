@@ -351,6 +351,11 @@ public class Entrega03 : MonoBehaviour
         {
             Debug.Log("Fin de semana!");
         }
+        else
+        {
+            Debug.Log("No es fin de semana :(");
+
+        }
 
         //EJERCICIO 9
         if (age >= 65)
