@@ -10,7 +10,7 @@ public class Entrega03 : MonoBehaviour
 
     [SerializeField] private string letter;
 
-    [SerializeField] private string grade;
+    [SerializeField] private int grade;
 
     [SerializeField] private int day;
     [SerializeField] private int month;
@@ -74,21 +74,25 @@ public class Entrega03 : MonoBehaviour
 
         //EJERCICIO 4
 
-        if (grade == "D")
+        if (grade <5 )
         {
-            Debug.Log("fail");
+            if(grade < 0)
+            {
+                Debug.Log("nota no válida");
+            }
+            Debug.Log("D");
         }
-        else if (grade == "C")
+        else if (grade < 7)
         {
-            Debug.Log("passed");
+            Debug.Log("C");
         }
-        else if (grade == "B")
+        else if (grade < 9 )
         {
-            Debug.Log("notable");
+            Debug.Log("B");
         }
         else
         {
-            Debug.Log("excellent");
+            Debug.Log("A");
         }
 
         //EJERCICIO 5
